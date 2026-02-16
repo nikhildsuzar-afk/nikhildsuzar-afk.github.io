@@ -835,6 +835,164 @@
             </div>
         </div>
     </section>
+        <!-- CRYPTO LAUNCH CHECKLIST SECTION -->
+    <style>
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(236, 72, 153, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.5); }
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulseText {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .checklist-section {
+            padding: 4rem 5%;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        .checklist-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #0f172a;
+            border: 2px solid transparent;
+            border-image: linear-gradient(90deg, #ec4899, #8b5cf6) 1;
+            border-radius: 16px;
+            padding: 2.5rem;
+            animation: glow 3s infinite;
+        }
+        
+        .checklist-title {
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            animation: pulseText 2s infinite;
+        }
+        
+        .checklist-subtitle {
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        
+        .checklist-category {
+            color: #60a5fa;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.8rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .checklist-item {
+            color: #cbd5e1;
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .checklist-item:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .checklist-item::before {
+            content: '☐';
+            position: absolute;
+            left: 0;
+            color: #ec4899;
+        }
+        
+        .checklist-warning {
+            color: #f87171;
+            font-weight: bold;
+            text-align: center;
+            margin: 2rem 0 1rem 0;
+            padding: 1rem;
+            background: rgba(248, 113, 113, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(248, 113, 113, 0.3);
+        }
+        
+        .checklist-offer {
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .checklist-cta {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            animation: pulseText 2s infinite;
+        }
+        
+        .checklist-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(236, 72, 153, 0.4);
+        }
+    </style>
+    
+    <section class="checklist-section">
+        <div class="checklist-container">
+            <h2 class="checklist-title">🎁 Free: Crypto Launch Checklist</h2>
+            <p class="checklist-subtitle">By Ethan Vale | 17 points to check before you launch</p>
+            
+            <div class="checklist-category">🌐 WEBSITE</div>
+            <div class="checklist-item">Does your headline explain the benefit in 5 words?</div>
+            <div class="checklist-item">Can a 10-year-old understand what you do?</div>
+            <div class="checklist-item">Is there a clear "Buy" or "Join" button?</div>
+            
+            <div class="checklist-category">📄 WHITEPAPER</div>
+            <div class="checklist-item">First page hooks the reader?</div>
+            <div class="checklist-item">Technical parts have simple summaries?</div>
+            <div class="checklist-item">Tokenomics explained with pictures?</div>
+            
+            <div class="checklist-category">✉️ EMAILS</div>
+            <div class="checklist-item">Welcome email sent immediately?</div>
+            <div class="checklist-item">3 follow-up emails planned?</div>
+            <div class="checklist-item">Clear call-to-action in each?</div>
+            
+            <div class="checklist-category">💬 SOCIAL MEDIA</div>
+            <div class="checklist-item">20 posts ready before launch?</div>
+            <div class="checklist-item">Telegram group active?</div>
+            <div class="checklist-item">Twitter bio explains project?</div>
+            
+            <div class="checklist-warning">
+                ⚠️ Checked less than 12 boxes? Your copy needs work.
+            </div>
+            
+            <p class="checklist-offer">
+                🎁 I fix these problems. <strong>40% off this week only.</strong>
+            </p>
+            
+            <a href="#contact" class="checklist-cta">
+                DM Me "LAUNCH" on LinkedIn →
+            </a>
+        </div>
+    </section>
+    <!-- END CHECKLIST SECTION -->
+
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
