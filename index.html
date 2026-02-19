@@ -835,6 +835,359 @@
             </div>
         </div>
     </section>
+        <!-- PROOF OF WORK SECTION - PSYCHOLOGY OPTIMIZED -->
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes glowBorder {
+            0%, 100% { border-color: rgba(59, 130, 246, 0.3); box-shadow: 0 0 20px rgba(59, 130, 246, 0.1); }
+            50% { border-color: rgba(139, 92, 246, 0.6); box-shadow: 0 0 30px rgba(139, 92, 246, 0.2); }
+        }
+        
+        @keyframes pulseSoft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .proof-section {
+            padding: 5rem 5%;
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+            position: relative;
+        }
+        
+        .proof-container {
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .proof-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #10b981;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .proof-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        
+        .proof-subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+        
+        .project-showcase {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            border: 2px solid;
+            border-image: linear-gradient(135deg, #3b82f6, #8b5cf6) 1;
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+            animation: glowBorder 4s infinite;
+        }
+        
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .project-meta h3 {
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .project-meta p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .project-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+            border-top: 1px solid #334155;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+        
+        .deliverables-grid {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .deliverable-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .deliverable-card:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: #3b82f6;
+            transform: translateX(5px);
+        }
+        
+        .deliverable-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(59, 130, 246, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+        
+        .deliverable-card:hover .deliverable-icon {
+            background: #3b82f6;
+            transform: scale(1.1);
+        }
+        
+        .deliverable-content {
+            flex: 1;
+        }
+        
+        .deliverable-title {
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .deliverable-desc {
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+        
+        .deliverable-arrow {
+            color: #64748b;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .deliverable-card:hover .deliverable-arrow {
+            color: #3b82f6;
+            transform: translateX(5px);
+        }
+        
+        .transparency-note {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        
+        .transparency-icon {
+            font-size: 1.2rem;
+        }
+        
+        .transparency-text {
+            color: #fbbf24;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .transparency-text strong {
+            color: #f59e0b;
+        }
+        
+        .cta-prompt {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+        }
+        
+        .cta-text {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-highlight {
+            color: white;
+            font-weight: 600;
+        }
+        
+        .cta-button-portfolio {
+            display: inline-block;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            animation: pulseSoft 2s infinite;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .cta-button-portfolio:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+    
+    <section class="proof-section" id="portfolio">
+        <div class="proof-container">
+            
+            <span class="proof-badge">✓ Independent Project</span>
+            
+            <h2 class="proof-title">Proof of Work</h2>
+            <p class="proof-subtitle">
+                Complete launch copy package written for a fictional DeFi protocol. 
+                Demonstrates full-stack capabilities from landing page to investor pitch.
+            </p>
+            
+            <div class="project-showcase">
+                
+                <div class="project-header">
+                    <div class="project-icon">🚀</div>
+                    <div class="project-meta">
+                        <h3>NovaSwap DEX</h3>
+                        <p>Decentralized Exchange • Token Launch Campaign • 2024</p>
+                    </div>
+                </div>
+                
+                <div class="project-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3,200+</div>
+                        <div class="stat-label">Words Written</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Deliverables</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Days Timeline</div>
+                    </div>
+                </div>
+                
+                <div class="deliverables-grid">
+                    
+                    <a href="https://drive.google.com/file/d/1YfQ_oy1pxLBAiDOqEahP1RS8rI0ylYZs/view?usp=drivesdk
+ target="_blank" class="deliverable-card">
+                        <div class="deliverable-icon">🌐</div>
+                        <div class="deliverable-content">
+                            <div class="deliverable-title">Landing Page Copy</div>
+                            <div class="deliverable-desc">Hero section, features, CTA optimization</div>
+                        </div>
+                        <div class="deliverable-arrow">→</div>
+                    </a>
+                    
+                    <a href="https://drive.google.com/file/d/1KRCru0Uhfj-i5fxg_XgUFDap1WXTBfGR/view?usp=drivesdk
+target="_blank" class="deliverable-card">
+                        <div class="deliverable-icon">📑</div>
+                        <div class="deliverable-content">
+                            <div class="deliverable-title">Whitepaper Excerpt</div>
+                            <div class="deliverable-desc">Executive summary, tokenomics, roadmap</div>
+                        </div>
+                        <div class="deliverable-arrow">→</div>
+                    </a>
+                    
+                    <a href="https://drive.google.com/file/d/1LPCeG82MRx35YTW3kWPnmRBTJPRbuLSZ/view?usp=drivesdk
+" target="_blank" class="deliverable-card">
+                        <div class="deliverable-icon">✉️</div>
+                        <div class="deliverable-content">
+                            <div class="deliverable-title">Email Sequence</div>
+                            <div class="deliverable-desc">Welcome, nurture, launch announcement</div>
+                        </div>
+                        <div class="deliverable-arrow">→</div>
+                    </a>
+                    
+                </div>
+                
+                <div class="transparency-note">
+                    <span class="transparency-icon">🔍</span>
+                    <div class="transparency-text">
+                        <strong>Transparency:</strong> NovaSwap is an independent spec project. 
+                        No real company, no client—just my writing skills on full display.
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="cta-prompt">
+                <p class="cta-text">
+                    Like what you see? <span class="cta-highlight">I build this for real projects too.</span>
+                </p>
+                <a href="#contact" class="cta-button-portfolio">
+                    Start Your Project →
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- END PROOF OF WORK SECTION →
+
         <!-- CRYPTO LAUNCH CHECKLIST SECTION -->
     <style>
         @keyframes glow {
